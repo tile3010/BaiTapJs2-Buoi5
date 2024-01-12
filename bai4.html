@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Bài 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bai2.html">Bài 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bai3.html">Bài 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bai4.html">Bài 4</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="w-50 mt-5">
+            <h5>B4.Tính tiền cáp</h5>
+            <form>
+                <div class="form-group">
+                    <select name="" id="khachhang" class="custom-select" onchange="hienSoKetNoi()">
+                        <option value="0">Chọn loai khách hàng</option>
+                        <option value="1">Nhà dân</option>
+                        <option value="2">Doanh nghiệp</option>
+                    </select>
+                </div>
+                <div class="form-group " id="soketnoi" style="display: none;">
+                    <label for="">Số kết nối</label>
+                    <input type="number" class="form-control" id="socongketnoi">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Mã khách hàng</label>
+                    <input type="text" class="form-control" id="makhachhang">
+                </div>
+                <div class="form-group">
+                    <label for="">Số kênh cao cấp</label>
+                    <input type="number" class="form-control" id="sokenhcaocap">
+                </div>
+                <button type="button" class="btn btn-primary" id="btnTinhTienCap">Submit</button>
+                <p class="alert alert-success mt-3" id="txtResult"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/bai4.js"></script>
+</body>
+
+</html>
